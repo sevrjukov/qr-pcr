@@ -1,0 +1,1 @@
+keytool -genkeypair -alias signerKeyPair -keyalg RSA -keysize 2048 -dname "CN=Sevrjukov" -validity 365 -storetype PKCS12  -keystore "/tmp/qr_test_keystore.p12" -storepass password
