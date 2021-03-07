@@ -1,1 +1,6 @@
+RSA keypair
+
 keytool -genkeypair -alias signerKeyPair -keyalg RSA -keysize 2048 -dname "CN=Sevrjukov" -validity 365 -storetype PKCS12  -keystore "/tmp/qr_test_keystore.p12" -storepass password
+
+EC keypair
+keytool -genkeypair -groupname secp256r1 -sigalg SHA256withECDSA -keyalg EC -dname "CN=Sevrjukov" -alias signerKeyPair -keypass password  -keystore "/tmp/qr_test_keystore_ec.p12" -storetype PKCS12  -storepass password -validity 1085

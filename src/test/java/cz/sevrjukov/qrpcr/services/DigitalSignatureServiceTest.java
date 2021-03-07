@@ -23,7 +23,7 @@ public class DigitalSignatureServiceTest {
 
 		var contentToSign = "VACLAV:NOVACEK:7256890245:85050:100062565:1615140115:1:";
 
-		byte[] signature = tested.signData(contentToSign.getBytes(StandardCharsets.UTF_8));
+		byte[] signature = tested.signDataECDSA(contentToSign.getBytes(StandardCharsets.UTF_8));
 		System.out.println(Hex.toHexString(signature));
 	}
 }

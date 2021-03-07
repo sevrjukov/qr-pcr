@@ -40,7 +40,7 @@ public class QrGeneratorServiceTest {
 		final QRGenerationRequest request = QRGenerationRequest
 				.builder()
 				.firstName("Vaclav")
-				.lastName("Novacek")
+				.lastName("Červenokostelecký")
 				.birthNumber("7256890245")
 				.testId(100062565L)
 				.testFacilityId(85050)
